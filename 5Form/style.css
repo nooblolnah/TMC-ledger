@@ -18,10 +18,11 @@ section{background:var(--surface);border:1px solid var(--line);border-radius:12p
 .balance{font-size:40px;font-weight:700;line-height:1.1;margin:0;overflow-wrap:anywhere}
 .balance.neg{color:var(--out)}
 .sub{color:var(--muted);font-size:14px;margin:4px 0 14px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-top:14px;border-top:1px solid var(--line)}
-.two b{display:block;font-size:20px}
+.two{display:flex;flex-wrap:wrap;gap:12px;padding-top:14px;border-top:1px solid var(--line)}
+.two>div{flex:1 1 auto;min-width:40%}
+.two b{display:block;font-size:20px;overflow-wrap:anywhere}
 .in{color:var(--in)}.out{color:var(--out)}
-.note{margin:14px 0 0;padding:12px;background:var(--bg);border-radius:8px;font-size:15px}
+.note{margin:14px 0 0;padding:12px;background:var(--bg);border-radius:8px;font-size:15px;overflow-wrap:anywhere}
 .bar{display:grid;grid-template-columns:104px 1fr 84px;gap:10px;align-items:center;font-size:14px;margin:8px 0}
 .track{height:10px;background:var(--bg);border-radius:5px;overflow:hidden}
 .fill{height:100%;background:var(--out);border-radius:5px}
